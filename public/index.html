@@ -1,0 +1,307 @@
+
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Flights on Flights</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://use.fontawesome.com/27a6b24997.js"></script>
+</head>
+
+<body>
+  <header class="tabs">
+    <div id="tab1" class="tab">
+      <span><i class="fa fa-fighter-jet" aria-hidden="true"></i></span>
+      <div class="b_right">
+        <div>
+          <span><b>NYC</b></span>
+          <span><i class="fa fa-arrows-h" aria-hidden="true"></i></span>
+          <span><b>MIA</b></span>
+        </div>
+        <div>
+          <span>APR 7 - 21</span>
+        </div>
+      </div>
+    </div>
+    <div class="tab">
+      <span><i class="fa fa-fighter-jet" aria-hidden="true"></i></span>
+      <div class="b_right">
+        <div>
+          <span><b>NYC</b></span>
+          <span><i class="fa fa-arrows-h" aria-hidden="true"></i></span>
+          <span><b>REK</b></span>
+        </div>
+        <div>
+          <span>APR 7 - 21</span>
+        </div>
+      </div>
+    </div>
+    <div id="e_tab"></div>
+  </header>
+  <div class="input23">
+    <div><input class="input_one" type="text"></div>
+    <div><input class="input_one" type="text"></div>
+    <!-- Calendar using webkit -->
+    <div><i class="fa fa-calendar" aria-hidden="true"></i></div>
+
+    <div><input type="date" data-date-inline-picker="true" /></div>
+
+    <div><i class="fa fa-minus" aria-hidden="true"></i></div>
+
+    <div class="calendar"><input type="date" data-date-inline-picker="true" /></div>
+    <!-- main_search -->
+    <div><input id="in_search" class="button" type="submit" value="Search"></div>
+    <!-- weird plus button -->
+    <div>
+      <i class="fa fa-plus" aria-hidden="true"></i>
+    </div>
+  </div>
+  <div id="body">
+    <div id="left_bar">
+      <div class="link_p">
+        <div>
+          <ul>
+            <li class="list-item"><a href="#">Price alert</a></li>
+            <li class="list-item"><a href="#">Fare charts</a></li>
+            <li class="list-item"><a href="#">Airline fees</a></li>
+          </ul>
+        </div>
+        <div id="dates_f">
+          <span>Flex dates: <a href="#">&plusmn; 3 days</a> | <a href="#">Explorer</a></span>
+
+        </div>
+      </div>
+      <div id="graph">
+        <p class="stitle" id="price_trend">Price Trend</p>
+        <a href="https://coinmarketcap.com/currencies/bitcoin/#charts" target = "_blank"><img class="sparkline" alt="sparkline" src="https://files.coinmarketcap.com/generated/sparklines/1.png"></a>
+        <p id="advice"><b>Advice: Wait   Confidence: 79%</b></p>
+        <p>Prices may fall within 7 days <button><i class="fa fa-info-circle" aria-hidden="true"></i></button></p>
+      </div>
+      <div id="stop">
+        <p class="stitle">Stops</p>
+        <div class="inner_s">
+          <div class="check-box">
+            <div class="check-b"><input class="checkbox" type="checkbox">
+              <p>nonstop</p>
+            </div>
+            <div class="check-b"><input class="checkbox" type="checkbox">
+              <p>1 stop</p>
+            </div>
+            <div class="check-b"><input class="checkbox" type="checkbox">
+              <p>2+ stops</p>
+            </div>
+          </div>
+          <div class="prices">
+            <p>$893</p>
+            <p>$1000</p>
+            <p>$2737</p>
+          </div>
+        </div>
+
+        <div class="matrix"><a href="#">Show airline/stop price matrix</a></div>
+      </div>
+      <div id="times">
+        <p class="stitle">Times</p>
+        <div class="stitle_2">
+          <p>Take-off New York</p>
+        </div>
+        <div class="section_i">
+          <p>Tue 2:00p - Wed 10:00p</p>
+        </div>
+        <input type="range" multiple="" value="10,80" class="multirange ghost" style="--low:11%; --high:79%;">
+        <div class="stitle_2">
+          <p>Take-off Reyjavik</p>
+        </div>
+        <div class="section_i">
+          <p>Tue 12:00a - 12:00a</p>
+        </div>
+        <input type="range" multiple="" value="10,80" class="multirange ghost" style="--low:11%; --high:79%;">
+        <div class="bottom_link"><a href="#">Show landing times</a></div>
+      </div>
+      <div id="airports">
+        <p class="stitle">Airports</p>
+        <div class="check-b"><input class="checkbox" type="checkbox">
+          <p>Depart/Return, same airports</p>
+        </div>
+      </div>
+    </div>
+    <div id="right_bar">
+      <div id="right_header">
+        <div class="list_amount">
+          <p><b>15</b> of <b>64 flights </b><a href="#">show all</a></p>
+          <div class="dropdown1">
+            <select name="Sort by price (low to high)">
+                <option value="1">Sort by price (low to high)</option>
+              </select>
+          </div>
+        </div>
+      </div>
+      <div id="check_rates">
+        <div id="check_rates_left">
+          <p>Check Rates</p>
+          <div class="search_button"><input class="button" type="submit" value="Select"></div>
+        </div>
+        <div class="check_rates_right">
+          <p class="right_bar_right_stitle">Faster flights. More legroom. 2 Bags free</p>
+          <p class="right_bar_right_section_info">Save time and money with Icelander on your way time to Reykjavik</p>
+          <a href="#" class="check_rates_link">Icelandair.us</a>
+        </div>
+        <img class="wide_logo" src="./icelander-wide.png" alt="Airline Logo">
+      </div>
+      <!-- 1st result box -->
+      <div class="result">
+        <div class="results_left">
+          <p class="result_price">$863</p>
+          <p class="result_under_price">KAYAK</p>
+          <div class="select_button"><input class="button" type="submit" value="Select"></div>
+          <div class="links_under_select">
+            <a href="#">Orbitz</a>
+            <a href="#">$902</a>
+          </div>
+          <div class="links_under_select">
+            <a href="#">Cheap Tickets.com</a>
+            <a href="#">$902</a>
+          </div>
+          <div>
+            <select class="dropdown" name="Sort by price (low to high)">
+                <option value="1">6 more sites</option>
+              </select>
+          </div>
+        </div>
+        <div class="results_right">
+          <div class="small-logo">
+            <img src="./icelander-small.png" alt="Airline Logo">
+          </div>
+          <div class="right_bar_inner_group">
+            <p class="right_bar_right_stitle">Icelandair</p>
+            <div class="right_bar_right_section_info">
+              <span>JFK</span>
+              <span><b>2:10p</b></span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span>KEF</span>
+              <span><b>11:40p</b></span>
+              <span>5h 30m</span>
+              <span>nonstop</span>
+            </div>
+            <div class="right_bar_right_section_info">
+              <span>KEF</span>
+              <span><b>10:30a</b></span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span>JFK</span>
+              <span><b>12:25p</b></span>
+              <span>5h 30m</span>
+              <span>nonstop</span>
+            </div>
+            <div class="dt_button_group">
+              <div class="search_button"><input class="dt_button" type="submit" value="Details"></div>
+              <div class="search_button"><input class="dt_button" type="submit" value="Fares"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2nd result box -->
+      <div class="result">
+        <div class="results_left">
+          <p class="result_price">$863</p>
+          <p class="result_under_price">KAYAK</p>
+          <div class="select_button"><input class="button" type="submit" value="Select"></div>
+          <div class="links_under_select">
+            <a href="#">Orbitz</a>
+            <a href="#">$902</a>
+          </div>
+          <div class="links_under_select">
+            <a href="www.cheaptickets.com">Cheap Tickets.com</a>
+            <a href="www.flights.google.com">$902</a>
+          </div>
+          <div class="dropdown">
+            <select class="dropdown" name="Sort by price (low to high)">
+                <option value="1">6 more sites</option>
+              </select>
+          </div>
+        </div>
+        <div class="results_right">
+          <div class="small-logo">
+            <img src="./icelander-small.png" alt="Airline Logo">
+          </div>
+          <div class="right_bar_inner_group">
+            <p class="right_bar_right_stitle">Icelandair</p>
+            <div class="right_bar_right_section_info">
+              <span>EWR</span>
+              <span><b>8:45p</b></span>
+            <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span>KEF</span>
+              <span><b>6:15a</b></span>
+              <span>5h 30m</span>
+              <span>nonstop</span>
+            </div>
+            <div class="right_bar_right_section_info">
+              <span>KEF</span>
+              <span><b>10:30a</b></span>
+          <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span>JFK</span>
+              <span><b>12:25p</b></span>
+              <span>5h 30m</span>
+              <span>nonstop</span>
+            </div>
+            <div class="dt_button_group">
+              <div class="search_button"><input class="dt_button" type="submit" value="Details"></div>
+              <div class="search_button"><input class="dt_button"  type="submit" value="Fares"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- 3rd result box -->
+      <div class="result">
+        <div class="results_left">
+          <p class="result_price">$863</p>
+          <p class="result_under_price">KAYAK</p>
+          <div class="select_button"><input class="button" type="submit" value="Select"></div>
+          <div class="links_under_select">
+            <a href="#">Orbitz</a>
+            <a href="#">$902</a>
+          </div>
+          <div class="links_under_select">
+            <a href="#">Cheap Tickets.com</a>
+            <a href="#">$902</a>
+          </div>
+          <div class="dropdown">
+            <select class="dropdown" name="Sort by price (low to high)">
+                <option value="1">6 more sites</option>
+              </select>
+          </div>
+        </div>
+        <div class="results_right">
+          <div class="small-logo">
+            <img src="./icelander-small.png" alt="Airline Logo">
+          </div>
+          <div class="right_bar_inner_group">
+            <p class="right_bar_right_stitle">Icelandair</p>
+            <div class="right_bar_right_section_info">
+              <span>JFK</span>
+              <span><b>8:40a</b></span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span>KEF</span>
+              <span><b>6:15a</b></span>
+              <span>5h 30m</span>
+              <span>nonstop</span>
+            </div>
+            <div class="right_bar_right_section_info">
+              <span>KEF</span>
+              <span><b>10:30a</b></span>
+              <i class="fa fa-arrow-right" aria-hidden="true"></i></span>
+              <span>JFK</span>
+              <span><b>12:25p</b></span>
+              <span>5h 30m</span>
+              <span>nonstop</span>
+            </div>
+            <div class="dt_button_group">
+              <div class="search_button"><input class="dt_button" type="submit" value="Details"></div>
+              <div class="search_button"><input class="dt_button" type="submit" value="Fares"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
